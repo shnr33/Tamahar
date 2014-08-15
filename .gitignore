@@ -1,2 +1,5 @@
 *.[oa]
 *~
+db.sqlite3
+progress/migrations/
+*.pyc

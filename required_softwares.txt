@@ -1,0 +1,5 @@
+Django==1.6.5
+South==1.0
+ipython==2.1.0
+pyreadline==2.0
+virtualenv==1.11.6

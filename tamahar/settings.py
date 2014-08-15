@@ -26,6 +26,8 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#To add a '/' by default at end of any URL if its missing
+APPEND_SLASH = True
 
 # Application definition
 
@@ -37,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'progress',
+    'south'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -81,3 +84,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#Template files
+TEMPLATE_DIRS = [os.path.join(BASE_DIR+"/progress", 'templates')]
